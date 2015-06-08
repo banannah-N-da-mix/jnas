@@ -2,7 +2,13 @@
 //Another Comment!!
 $( document ).ready(function() {
     console.log( "ready!" );
-    
-    $(".main-jumbo").css({'background-position': '0px 0px'})
-    .animate({"background-position-x": "0%","background-position-y": "100%"}, "slow");
+  
+    function loopAnimate(){
+      $(".main-jumbo").animate({"background-position-y": "100%"}, 12000,function(){
+            $(this).css({'background-position': '0% 0%'});
+        });
+    }
+  
+    loopAnimate();
+    setInterval(loopAnimate,12000); 
 });
