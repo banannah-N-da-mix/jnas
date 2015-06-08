@@ -7,8 +7,7 @@ $( document ).ready(function() {
       $(".main-jumbo").animate({"background-position-y": "100%"}, 12000,function(){
             $(this).css({'background-position': '0% 0%'});
         });
-        loopAnimate();
     }
-  
     loopAnimate();
+    setInterval(loopAnimate,12000); 
 });
