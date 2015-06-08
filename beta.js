@@ -8,6 +8,5 @@ $( document ).ready(function() {
             $(this).css({'background-position': '0% 0%'});
         });
     }
-    loopAnimate();
-    setInterval(loopAnimate,12000); 
+    loopAnimate(); 
 });
